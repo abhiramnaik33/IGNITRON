@@ -1,0 +1,241 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #050505;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Section Styles */
+.section {
+    margin: 40px auto;
+    padding: 40px 20px;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.section:hover {
+    background-color: #333;
+}
+
+/* Section Header Styling */
+.section h2 {
+    font-size: 2.4em;
+    color: #00cc7a;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #333;
+    padding-bottom: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.section h2:hover {
+    color: #00cc7a;
+}
+
+/* Photo Row */
+.photo-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Photo Card Styling */
+.photo-card {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid #333;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Updated image container styling */
+.photo-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00cc7a;
+    transition: border-color 0.3s, transform 0.3s;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.photo-card p {
+    color: #e0e0e0;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.photo-card h5, .photo-card h6 {
+    color: #888;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+/* Social Links Styling */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #888;
+    font-size: 1.5em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #00cc7a;
+    transform: scale(1.1);
+}
+
+/* Hover Effects */
+.photo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(57, 255, 20, 0.2);
+    border: 2px solid #00cc7a;
+}
+
+.photo-card:hover img {
+    border-color: #00cc7a;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .photo-row {
+        gap: 20px;
+    }
+    
+    .photo-card {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 30px 15px;
+    }
+    
+    .photo-card {
+        width: 160px;
+        padding: 15px;
+    }
+    
+    .photo-card img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .section h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 20px 10px;
+        margin: 20px auto;
+        width: 95%;
+    }
+    
+    .photo-row {
+        gap: 15px;
+    }
+    
+    .photo-card {
+        width: 140px;
+        padding: 12px;
+    }
+    
+    .photo-card img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .photo-card p {
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+    
+    .section h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.footer {
+    background-color: #111111;
+    color: #f0f0f0;
+}
+.footer h5 {
+    margin-bottom: 20px;
+    color: #00ff99;
+}
+.footer a {
+    color: #00ff99;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-links a {
+    font-size: 1.5rem;
+}
+footer a {
+    color: #66ccff;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+  footer p{
+    text-align: center;
+}
+footer p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
